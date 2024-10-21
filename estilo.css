@@ -1,81 +1,122 @@
-/* Estilos gerais */
-body {
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5; /* Cor de fundo */
-}
+@charset "UTF-8";
 
-#interface {
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-    box-sizing: border-box;
-    background-color: #ffffff; /* Cor de fundo do conteúdo */
-}
+@media (max-width: 480px) {
+    /* Para telas pequenas (celulares) */
+    html {
+        font-size: 25px;
+    }
 
-nav.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333; /* Cor de fundo do menu */
-}
+    #text {
+        font-size: 0.35rem;
+    }
 
-.menu button {
-    background: #444; /* Cor de fundo do botão */
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    margin: 5px 0;
-    color: #fff; /* Cor do texto */
-    padding: 10px 20px; /* Adicionando preenchimento para melhorar o clique em dispositivos móveis */
-}
+    figure.titulo figcaption h1{
+        font-size: 0.875rem;
+    }
 
-.menu button:hover {
-    background: #555; /* Cor ao passar o mouse */
-}
+    figure.titulo figcaption h2 {
+        font-size: 0.75rem;
+    }
 
-figure.titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 2px solid #ccc; /* Adiciona borda à figura */
-    padding: 10px;
-    margin-bottom: 20px;
-}
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
 
-figure.titulo img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
-}
-
-figure.titulo figcaption {
-    margin-top: 10px;
-    color: #333; /* Cor do texto das legendas */
-}
-
-.img-container {
-    text-align: center;
-}
-
-#txt {
-    padding: 15px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333; /* Cor do texto */
-}
-
-/* Estilos para dispositivos móveis */
-@media screen and (max-width: 480px) {
     .menu button {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
     }
 
-    #txt {
-        font-size: 14px;
-        padding: 10px;
+    figure.titulo {
+        max-width: 100%;
+        height: auto;
     }
+
+    figure.titulo img{
+        width: 100%;
+    }
+}
+
+/* Estilo geral */
+
+html {
+    font-size: 40px;
+}
+
+
+body {
+    background-color: pink;
+}
+/*Interface*/
+div#interface{
+    width: 100%;
+    box-shadow: 0px 0px 15px #ff69b4d8;
+    padding: 5px 30px 5px 30px;
+    margin: 0px auto 0px auto;
+    position: relative;
+}
+
+/* Ajustes no cabeçalho */
+figure.titulo {
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 5px 5px 15px #ff69b4d8;
+}
+
+figure.titulo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure.titulo figcaption{
+    padding: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #60606631;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+figure.titulo figcaption h1{
+    color: pink;
+    text-shadow: 2px 2px 5px rgb(0,0,0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.875rem;
+    position: relative;
+}
+
+figure.titulo figcaption h2 {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 900px;
+    color: white;
+    text-shadow: 2px 2px 2px pink;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+
+/* Ajustes para os botões */
+nav#menu {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    padding-bottom: 5%;
+}
+
+/* Ajustes para o texto */
+#txt {
+    margin: 20px auto;
+    max-width: 100%;
+    padding: -10px 10px 5px 10px;
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 0.35rem;
 }

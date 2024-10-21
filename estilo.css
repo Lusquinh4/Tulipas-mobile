@@ -25,7 +25,7 @@
 
     .menu button {
         width: 100%;
-        padding: 15px;
+        padding: 30px;
     }
 
     figure.titulo {
@@ -104,11 +104,34 @@ figure.titulo figcaption h2 {
 
 
 /* Ajustes para os botões */
+a {
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:active {
+  color: #ff69b4d8;
+}
+
+a:hover{
+    color: #fff;
+}
+
 nav#menu {
     position: absolute;
     top: 4%;
     left: 2%;
     padding-bottom: 5%;
+}
+
+.menu button {
+    transition: 1s;
+}
+
+.menu button:hover {
+    background-color: #ff69b4d8;
+    color: #fff;
 }
 
 /* Ajustes para o texto */

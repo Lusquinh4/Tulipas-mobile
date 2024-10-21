@@ -3,6 +3,7 @@ body {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; /* Cor de fundo */
 }
 
 #interface {
@@ -10,20 +11,28 @@ body {
     margin: 0 auto;
     padding: 15px;
     box-sizing: border-box;
+    background-color: #ffffff; /* Cor de fundo do conteúdo */
 }
 
 nav.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #333; /* Cor de fundo do menu */
 }
 
 .menu button {
-    background: none;
+    background: #444; /* Cor de fundo do botão */
     border: none;
     font: inherit;
     cursor: pointer;
     margin: 5px 0;
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Adicionando preenchimento para melhorar o clique em dispositivos móveis */
+}
+
+.menu button:hover {
+    background: #555; /* Cor ao passar o mouse */
 }
 
 figure.titulo {
@@ -31,11 +40,20 @@ figure.titulo {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 2px solid #ccc; /* Adiciona borda à figura */
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 figure.titulo img {
     width: 100%;
     height: auto;
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+figure.titulo figcaption {
+    margin-top: 10px;
+    color: #333; /* Cor do texto das legendas */
 }
 
 .img-container {
@@ -46,6 +64,7 @@ figure.titulo img {
     padding: 15px;
     font-size: 16px;
     line-height: 1.5;
+    color: #333; /* Cor do texto */
 }
 
 /* Estilos para dispositivos móveis */

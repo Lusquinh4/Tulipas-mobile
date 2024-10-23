@@ -28,16 +28,6 @@
         padding: 40px;
     }
 
-    figure.titulo {
-        max-width: 100%;
-        height: auto;
-    }
-
-    figure.titulo img{
-        width: 100%;
-    }
-}
-
 /* Estilo geral */
 
 html {
@@ -58,31 +48,7 @@ div#interface{
 }
 
 /* Ajustes no cabeçalho */
-figure.titulo {
-    margin: 0 auto;
-    margin-top: 10px;
-    position: relative;
-    box-shadow: 5px 5px 15px #ff69b4d8;
-}
-
-figure.titulo img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-figure.titulo figcaption{
-    padding: auto;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    background-color: #60606631;
-    position: absolute;
-    top: 0px;
-    text-align: center;
-}
-
-figure.titulo figcaption h1{
+ h1{
     color: pink;
     text-shadow: 2px 2px 5px rgb(0,0,0);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -90,7 +56,7 @@ figure.titulo figcaption h1{
     position: relative;
 }
 
-figure.titulo figcaption h2 {
+    h2 {
     text-align: center;
     font-size: 0.75rem;
     font-weight: 900px;
